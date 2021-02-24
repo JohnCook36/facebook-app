@@ -35,7 +35,7 @@ export const Name = styled.div `
   align-items: center;
 `
 
-export const ProfileIcons = styled.div `
+export const ProfileIcon = styled.div `
   display: flex;
   justify-content: center;
   align-items: center;

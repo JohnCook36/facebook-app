@@ -17,21 +17,21 @@ const Profile = () => {
                 <s.Name>Sally</s.Name>
             </s.HeaderInfo>
 
-            <s.ProfileIcons>
+            <s.ProfileIcon>
                 <img src={plus} alt=""/>
-            </s.ProfileIcons>
+            </s.ProfileIcon>
 
-            <s.ProfileIcons>
+            <s.ProfileIcon>
                 <img src={messenger} alt=""/>
-            </s.ProfileIcons>
+            </s.ProfileIcon>
 
-            <s.ProfileIcons>
+            <s.ProfileIcon>
                 <img src={notification} alt=""/>
-            </s.ProfileIcons>
+            </s.ProfileIcon>
 
-            <s.ProfileIcons>
+            <s.ProfileIcon>
                 <img src={more} alt=""/>
-            </s.ProfileIcons>
+            </s.ProfileIcon>
         </s.ProfileStyles>
     )
 }
