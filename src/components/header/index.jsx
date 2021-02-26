@@ -1,8 +1,8 @@
 import React from "react";
-import Search from "./search";
+import Search from "./search/index";
 import {HeaderStyles} from "./index.styles";
-import Nav from "./nav";
-import Profile from "./profile";
+import Nav from "./nav/index";
+import Profile from "./profile/index";
 
 const Header = () => {
 
