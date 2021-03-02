@@ -28,6 +28,6 @@ export const CircleRed = styled.div `
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  color: #ffffff;
-  background: #DE3F4F;
+  color: var(--white);
+  background: var(--facebookRed);
 `

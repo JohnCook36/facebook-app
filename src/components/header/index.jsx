@@ -4,15 +4,13 @@ import {HeaderStyles} from "./index.styles";
 import Nav from "./nav/index";
 import Profile from "./profile/index";
 
-const Header = () => {
-
+function Header() {
     return (
         <HeaderStyles>
             <Search/>
             <Nav/>
             <Profile/>
         </HeaderStyles>
-
     )
 }
 

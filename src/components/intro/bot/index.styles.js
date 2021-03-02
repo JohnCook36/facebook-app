@@ -12,7 +12,7 @@ export const Container = styled.div `
   display: flex;
   justify-content: space-between;
   width: 877px;
-  border-top: 1px solid var(--facebookLineGrey);
+  border-top: 1px solid #cfd0d4;
 `
 
 export const IntroNav = styled.div `
