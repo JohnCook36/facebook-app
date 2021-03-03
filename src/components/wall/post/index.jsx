@@ -1,9 +1,14 @@
 import React from "react"
+import CreatePost from "./Create-Post";
+import PinnedPost from "./Pinned-Post";
+import OtherPost from "./Other-Post";
 
 function Posts() {
     return (
         <div>
-            Post
+            <CreatePost/>
+            <PinnedPost/>
+            <OtherPost/>
         </div>
     )
 }

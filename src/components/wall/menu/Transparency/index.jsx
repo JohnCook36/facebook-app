@@ -1,11 +1,13 @@
 import React from "react"
 import * as s from "./index.styles";
 import flag from "../../../../img/svg/flag.svg";
+import logo from "../../../../img/png/logo.png";
 
 function Transparency() {
     return (
         <s.Block>
             <s.BlockTitle>
+                <img src={logo} alt=""/>
                 <h2>Page transparency</h2>
                 <s.SeeAll>See all</s.SeeAll>
             </s.BlockTitle>
