@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../../img/png/logo.png"
-import search from "../../../img/svg/search.svg"
 import * as s from "./index.styled";
+import {Icons} from "../../../sprite/";
 
 const Search = () => {
     return (
@@ -10,7 +10,9 @@ const Search = () => {
             <s.SearchForm>
                 <s.SearchBox>
                     <s.SearchButton>
-                        <s.Icon src={search} alt="search"/>
+                        <Icons
+                            name="search"
+                        />
                     </s.SearchButton>
                     <s.SearchTxt  type="text" placeholder="Search Facebook"/>
                 </s.SearchBox>

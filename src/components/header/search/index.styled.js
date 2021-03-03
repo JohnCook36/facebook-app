@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import {Icons} from "../../../sprite";
 
 
 export const SearchStyled = styled.div `
@@ -44,7 +45,7 @@ export const SearchTxt = styled('input') `
   cursor: text;
 `
 
-export const Icon = styled.img `
+export const Icon = styled(Icons) `
   height: 23px;
   width: 23px;
   fill: #66676B;

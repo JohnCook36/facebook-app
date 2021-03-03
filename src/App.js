@@ -2,7 +2,8 @@ import {Wrapper} from "./App.styles";
 import Header from "./components/header/index"
 import Intro from "./components/intro/index";
 import Wall from "./components/wall/index";
-import { Global, css } from '@emotion/react'
+import {Global, css} from '@emotion/react'
+import {IconsProvider} from "./sprite";
 
 let globalStyles = css`
   :root {
@@ -57,16 +58,18 @@ let globalStyles = css`
 `
 
 function App() {
-  return (
-      <Wrapper>
-          <Global
-              styles={globalStyles}
-          />
-        <Header/>
-        <Intro/>
-        <Wall/>
-      </Wrapper>
-  );
+    return (
+        <IconsProvider>
+            <Wrapper>
+                <Global
+                    styles={globalStyles}
+                />
+                <Header/>
+                <Intro/>
+                <Wall/>
+            </Wrapper>
+        </IconsProvider>
+    );
 }
 
 export default App;
