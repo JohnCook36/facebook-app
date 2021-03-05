@@ -1,8 +1,4 @@
 import React from "react";
-import plus from "../../../img/svg/plus.svg"
-import messenger from "../../../img/svg/messenger.svg"
-import notification from "../../../img/svg/notification.svg"
-import more from "../../../img/svg/more.svg"
 import avatar from "../../../img/png/avatar.png"
 import * as s from "./index.styles"
 
@@ -18,19 +14,35 @@ const Profile = () => {
             </s.HeaderInfo>
 
             <s.ProfileIcon>
-                <img src={plus} alt=""/>
+                <s.Icon
+                    name="plus"
+                    color="var(--facebookGrey)"
+                    size="var(--iconSize)"
+                />
             </s.ProfileIcon>
 
             <s.ProfileIcon>
-                <img src={messenger} alt=""/>
+                <s.Icon
+                    name="messenger"
+                    color="var(--facebookGrey)"
+                    size="var(--iconSize)"
+                />
             </s.ProfileIcon>
 
             <s.ProfileIcon>
-                <img src={notification} alt=""/>
+                <s.Icon
+                    name="notification"
+                    color="var(--facebookGrey)"
+                    size="var(--iconSize)"
+                />
             </s.ProfileIcon>
 
             <s.ProfileIcon>
-                <img src={more} alt=""/>
+                <s.Icon
+                    name="more"
+                    color="var(--facebookGrey)"
+                    size="var(--iconSize)"
+                />
             </s.ProfileIcon>
         </s.ProfileStyles>
     )

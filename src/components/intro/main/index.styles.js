@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import {Icons} from "../../../sprite";
 
 
 export const Main = styled.div `
@@ -39,6 +40,10 @@ export const Button = styled.button`
   border-radius: 6px;
   padding: 10px 105px;
   border: none;
+  --iconSize: 17px
+`
+export const Icon = styled(Icons)`
+  cursor: pointer;
 `
 
 export const ButtonTitle = styled.span`

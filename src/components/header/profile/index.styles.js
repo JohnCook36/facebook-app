@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import {Icons} from "../../../sprite";
 
 
 export const ProfileStyles = styled.div `
@@ -20,7 +21,7 @@ export const HeaderInfo = styled.div `
   transition: .2s;
   opacity: 1;
   &:hover {
-    background-color: #E9F3FE
+    background-color: var(--facebookLightBlue)
   }
 `
 
@@ -39,12 +40,18 @@ export const ProfileIcon = styled.div `
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  background-color: #E5E6EB;
+  background-color: var(--facebookLightGrey);
   transition: .2s linear;
    &:hover {
-    background-color: #d0d0d6;
+    background-color: var(--facebookGreyBG);
   }
+`
+
+export const Icon = styled(Icons) `
+  --iconSize: 15px;
+  cursor: pointer;
 `

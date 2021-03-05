@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import {Icons} from "../../../sprite";
 
 
 export const NavStyles = styled.div `
@@ -12,10 +13,15 @@ export const BgcIcon = styled.div `
   padding: 15px 40px;
   border-bottom: 3px solid transparent;
   transition: 0.2s;
+  --iconSize: 24px;
   &:hover {
-    border-bottom: 3px solid #0572EF;
+    border-bottom: 3px solid var(--facebookBlue);
     cursor: pointer;
   }
+`
+
+export const Icon = styled(Icons) `
+  cursor: pointer;
 `
 
 export const CircleRed = styled.div `

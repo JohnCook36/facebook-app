@@ -1,7 +1,6 @@
 import React from "react";
 import * as s from "./index.styles"
 import avatar from "../../../img/png/avatar-s.png"
-import iconBook from "../../../img/svg/reservation.svg"
 
 const Main = () => {
     return (
@@ -16,7 +15,11 @@ const Main = () => {
                 </s.Avatar>
 
                 <s.Button>
-                    <img src={iconBook} alt=""/>
+                    <s.Icon
+                        name="reservation"
+                        color="var(--facebookGrey)"
+                        size="var(--iconSize)"
+                    />
                     <s.ButtonTitle>Book Now</s.ButtonTitle>
                 </s.Button>
             </s.Container>

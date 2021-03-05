@@ -1,10 +1,18 @@
 import React from 'react';
+import styled from "@emotion/styled";
+
+const StyledSvg = styled.svg`
+  flex-shrink: 0;
+  width: var(--iconSize);
+  height: var(--iconSize);
+`
 
 export function Icons({name, color, size, className}) {
 
     return(
-        <svg className={`icon icon-${name} ${className}`} fill={color} stroke={color} width={size} height={size}>>
+        <StyledSvg className={className}
+             fill={color}>
             <use xlinkHref={`#${name}`} />
-        </svg>
+        </StyledSvg>
     )
 }

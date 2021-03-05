@@ -29,6 +29,7 @@ export const SearchButton = styled.div `
   width: 16px;
   height: 16px;
   cursor: pointer;
+  --iconSize: 13px;
 `
 
 export const SearchTxt = styled('input') `
@@ -36,8 +37,7 @@ export const SearchTxt = styled('input') `
   border: none;
   background: none;
   outline: none;
-  float: left;
-  padding-left: 8px;
+  padding-left: 15px;
   color: #66676B;
   font-size: 15px;
   line-height: 1.2;
@@ -46,8 +46,5 @@ export const SearchTxt = styled('input') `
 `
 
 export const Icon = styled(Icons) `
-  height: 23px;
-  width: 23px;
-  fill: #66676B;
   cursor: pointer;
 `

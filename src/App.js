@@ -17,6 +17,7 @@ let globalStyles = css`
     --facebookLightGrey: #e5e6eb;
     --facebookInputGrey: #f1f2f5;
     --facebookLineGrey: #CFD0D4;
+    --facebookGreyBG: #d0d0d6;
     --facebookGrey: #66676b;
     --facebookGreyMedium: #8C939C;
   }
