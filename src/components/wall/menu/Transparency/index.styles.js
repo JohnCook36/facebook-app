@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import {Icons} from "../../../../sprite";
 
 export const Block = styled.div `
   display: grid;
@@ -51,6 +52,10 @@ export const TransparencyIcon = styled.a `
   background: var(--facebookInputGrey);
   border-radius: 50%;
   cursor: pointer;
+`
+
+export const Icon = styled(Icons) `
+  --iconSize: 20px;
 `
 
 export const CreatedText = styled.a `

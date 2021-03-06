@@ -1,16 +1,6 @@
 import React from "react"
 import * as s from "./index.styles";
-import pointer from "../../../../img/svg/pointer.svg";
-import info from "../../../../img/svg/info.svg";
-import like from "../../../../img/svg/like.svg";
-import follow from "../../../../img/svg/follow.svg";
-import checked from "../../../../img/svg/checked.svg";
-import website from "../../../../img/svg/website.svg";
-import phone from "../../../../img/svg/phone.svg";
-import sendMessage from "../../../../img/svg/send-message.svg";
-import email from "../../../../img/svg/email.svg";
-import time from "../../../../img/svg/time.svg";
-import industry from "../../../../img/svg/industry.svg";
+import Map from "./Map/index"
 
 function About() {
     return (
@@ -22,34 +12,16 @@ function About() {
                 </s.BlockTitle>
 
                 <s.BlockMenu>
-                    <s.MapBlock>
-                        <s.MapAddress>
-                            <s.AddressBlock>
-                                <s.PointerAddress>
-                                    <img src={pointer} alt=""/>
-                                </s.PointerAddress>
-                                <s.AddressTitle>
-                                    <p>Address line 1</p>
-                                    <p>Address line 2</p>
-                                </s.AddressTitle>
-                            </s.AddressBlock>
-                        </s.MapAddress>
-
-                        <s.MapIcon>
-                            <s.PointerMap>
-                                <img src={pointer} alt=""/>
-                            </s.PointerMap>
-
-                            <s.InfoMap>
-                                <img src={info} alt=""/>
-                            </s.InfoMap>
-                        </s.MapIcon>
-                    </s.MapBlock>
+                    <Map/>
                 </s.BlockMenu>
 
                 <s.BlockMenu>
                         <s.ListBlock>
-                            <img src={info} alt=""/>
+                            <s.Icon
+                                name="pointer"
+                                color="var(--facebookGrey)"
+                                size="var(--iconSize)"
+                            />
                             <s.ListDescription>
                                 Lorem Ipsum is simply dummy text of the
                                 printing and typesetting industry. Lorem Ipsum has been the
@@ -58,7 +30,11 @@ function About() {
                         </s.ListBlock>
 
                     <s.ListBlock>
-                        <img src={like} alt=""/>
+                        <s.Icon
+                            name="like"
+                            color="var(--facebookGrey)"
+                            size="var(--iconSize)"
+                        />
                         <s.ListDescription>
                             36,762 people like this, including 25 of your friends
                             <s.CircleBox>
@@ -74,66 +50,91 @@ function About() {
                     </s.ListBlock>
 
                     <s.ListBlock>
-                        <img src={follow} alt=""/>
+                        <s.Icon
+                            name="follow"
+                            color="var(--facebookGrey)"
+                            size="var(--iconSize)"
+                        />
                         <s.ListDescription>
                             37,822 people follow this
                         </s.ListDescription>
                     </s.ListBlock>
 
                     <s.ListBlock>
-                        <img src={checked} alt=""/>
+                        <s.Icon
+                            name="checked"
+                            color="var(--facebookGrey)"
+                            size="var(--iconSize)"
+                        />
                         <s.ListDescription>
                             43 people checked in here
                         </s.ListDescription>
                     </s.ListBlock>
 
                     <s.ListBlock>
-                        <img src={website} alt=""/>
+                        <s.Icon
+                            name="website"
+                            color="var(--facebookGrey)"
+                            size="var(--iconSize)"
+                        />
                         <s.ListDescription>
-                            37,822 people follow this
+                            <s.BlueTxt>https://www.website.com/</s.BlueTxt>
                         </s.ListDescription>
                     </s.ListBlock>
 
                     <s.ListBlock>
-                        <img src={website} alt=""/>
+                        <s.Icon
+                            name="phone"
+                            color="var(--facebookGrey)"
+                            size="var(--iconSize)"
+                        />
                         <s.ListDescription>
-                            <a href="">https://www.website.com/</a>
+                            <p>012 345 6789</p>
                         </s.ListDescription>
                     </s.ListBlock>
 
                     <s.ListBlock>
-                        <img src={phone} alt=""/>
+                        <s.Icon
+                            name="sendMessage"
+                            color="var(--facebookGrey)"
+                            size="var(--iconSize)"
+                        />
                         <s.ListDescription>
-                            <a>012 345 6789</a>
+                            <p>Away</p> <s.BlueTxt href="#">Send message</s.BlueTxt>
                         </s.ListDescription>
                     </s.ListBlock>
 
                     <s.ListBlock>
-                        <img src={sendMessage} alt=""/>
+                        <s.Icon
+                            name="email"
+                            color="var(--facebookGrey)"
+                            size="var(--iconSize)"
+                        />
                         <s.ListDescription>
-                            <p>Away</p> <a href="#">Send message</a>
+                            <s.BlueTxt>email@website.com</s.BlueTxt>
                         </s.ListDescription>
                     </s.ListBlock>
 
                     <s.ListBlock>
-                        <img src={email} alt=""/>
+                        <s.Icon
+                            name="time"
+                            color="var(--facebookGrey)"
+                            size="var(--iconSize)"
+                        />
                         <s.ListDescription>
-                            <a href="">email@website.com</a>
-                        </s.ListDescription>
-                    </s.ListBlock>
-
-                    <s.ListBlock>
-                        <img src={time} alt=""/>
-                        <s.ListDescription>
-                            <p className="closed-now">Closed now</p>
+                            <s.RedText>Closed now</s.RedText>
                             <p className="work-time">08:00 - 17:00</p>
                         </s.ListDescription>
                     </s.ListBlock>
 
                     <s.ListBlock>
-                        <img src={industry} alt=""/>
+                        <s.Icon
+                            name="industry"
+                            color="var(--facebookGrey)"
+                            size="var(--iconSize)"
+                        />
                         <s.ListDescription>
-                            <a href="">Industry</a>
+                            <s.BlueTxt>Industry</s.BlueTxt>
                         </s.ListDescription>
                     </s.ListBlock>
                 </s.BlockMenu>

@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import {Icons} from "../../../../sprite";
 
 
 export const BlockPost = styled.div `
@@ -39,7 +40,7 @@ export const ButtonCreate = styled.div `
   cursor: pointer;
   transition: .1s linear;
   &:hover {
-    background: #d0d0d6;
+    background: var(--facebookLightBlue);
     color: var(--facebookBlue);
   }
 `
@@ -54,6 +55,10 @@ export const IconAdd = styled.div `
   display: flex;
   align-items: center;
   cursor: pointer;
+  --iconSize: 20px
+`
+
+export const Icon = styled(Icons) `
 `
 
 export const ActionName = styled.span `

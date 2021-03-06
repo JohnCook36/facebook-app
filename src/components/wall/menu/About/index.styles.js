@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import {Icons} from "../../../../sprite";
 
 
 export const Block = styled.div `
@@ -23,7 +24,7 @@ export const SeeAll = styled.a `
   color: var(--facebookBlue);
   cursor: pointer;
 `
-export const BlockMenu = styled.div ` 
+export const BlockMenu = styled.div `
   padding: 0 15px 0;
   display: grid;
   grid-gap: 15px;
@@ -31,60 +32,13 @@ export const BlockMenu = styled.div `
   line-height: 19px;
 `
 
-export const MapBlock = styled.div `
-  width: auto;
-  height: 170px;
-  background: #333333;
-  border-radius: 8px;
-`
-
-export const MapAddress = styled.div `
-  padding: 21px 12px 0 21px;
-`
-export const AddressBlock = styled.div `
-  display: flex;
-  align-items: center;
-  height: 65px;
-  background-color: var(--white);
-  border-radius: 8px;
-`
-
-export const PointerAddress = styled.div `
-  margin-left: 20px;
-  fill: #C4C4C4;
-  width: 16px;
-  height: 20px;
-`
-
-export const AddressTitle = styled.div `
-  color: var(--facebookBlue);
-  margin-left: 15px;
-`
-
-export const MapIcon = styled.div `
-  margin: 20px 0 0 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 230px;
-  height: 50px;
-`
-
-export const PointerMap = styled.div `
-  height: 24px;
-  color: var(--pointer);
-`
-
-export const InfoMap = styled.div `
-  margin-top: 5px;
-  height: 16px;
-  display: flex;
-  align-self: flex-start;
-`
-
 export const ListBlock = styled.div `
     display: flex;
     align-items: flex-start;
+`
+
+export const Icon = styled(Icons) `
+  --iconSize: 20px;
 `
 
 export const ListDescription = styled.div `
@@ -102,3 +56,13 @@ export const CircleMenu = styled.div `
   background: var(--facebookBlue);
   border-radius: 50%;
 `
+
+export const BlueTxt = styled.div `
+  color: var(--facebookBlue);
+  cursor: pointer;
+`
+
+export const RedText = styled.div `
+  color: var(--facebookRed);
+`
+

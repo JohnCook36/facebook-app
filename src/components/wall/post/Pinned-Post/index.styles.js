@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 
-
 export const TitlePost = styled.div `
   font-weight: 500;
   font-size: 15px;
@@ -17,7 +16,10 @@ export const BlockPost = styled.div `
   border-radius: 8px;
 `
 
-export const Icon = styled.img `
-  height: 6px;
-  width: 26px;
+export const PostImg = styled.div `
+  margin-top: 20px;
+  width: 502px;
+  height: 281px;
+  background: #333333;
+  cursor: pointer;
 `

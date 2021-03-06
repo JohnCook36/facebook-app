@@ -1,6 +1,5 @@
 import React from "react"
 import * as s from "./index.styles";
-import flag from "../../../../img/svg/flag.svg";
 import logo from "../../../../img/png/logo.png";
 
 function Transparency() {
@@ -21,7 +20,11 @@ function Transparency() {
 
             <s.TransparencyCreated>
                 <s.TransparencyIcon>
-                    <img src={flag} alt=""/>
+                    <s.Icon
+                        name="flag"
+                        color="var(--facebookGrey)"
+                        size="var(--iconSize)"
+                    />
                 </s.TransparencyIcon>
                 <s.CreatedText>Page created - 20 October 2015</s.CreatedText>
             </s.TransparencyCreated>
